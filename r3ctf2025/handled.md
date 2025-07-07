@@ -1,6 +1,6 @@
 # Intro 
 
-For this challenge I really wanted to make sure its "windowsy" enough, so pretty much all the key solve-points are exclusive to windows. That being said, the environment is significantly harder to setup than an average linux pwn challenge, so that could've been a significant deterrent from people attempting this(:disappointed:)
+For this challenge I really wanted to make sure its "windowsy" enough, so pretty much all the key solve-points are exclusive to windows. That being said, the environment is significantly harder to setup than an average linux pwn challenge, so that could've been a significant deterrent from people attempting this(😞)
 Anyway, let's get to the important part - the solve.
 
 
