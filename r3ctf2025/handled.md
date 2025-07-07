@@ -278,7 +278,7 @@ The gadgets we have access to are extremely limited since only the stack checker
 
 So what's so good about being able to read stuff from the file segment? Well it turns out, besides using it as TLS, windows also stores a LOT of other info here, including stuff like module base addresses. 
 Here's the 2 most important offsets:
-`fs:0x30`: PEB struct pointer, which contains a reference to LDR head, which itself contains several linked lists of all loaded modules in different order. Any one of them would probably work but I found InLoadOrder to be the most consistent(ntdll, kernelbase, kernel32).
+`fs:0x30`: PEB struct pointer, which contains a reference to LDR head, which itself contains several linked lists of all loaded modules in different order. Any one of them would probably work but I found InInitOrder to be the most consistent(ntdll, kernelbase, kernel32).
 
 `fs:0x18`: The value of fs itself. This can be used to get any value from `fs:offset`, including `fs:0x30`.
 
